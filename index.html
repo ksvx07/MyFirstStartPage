@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartPage</title>
+    <link href="prettyInput.css" rel="stylesheet">
+    <link href="startPage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
+</head>
+<body>
+    <!--Weather : display weather icon and temperature-->
+    <div class="weather">
+        <span class="location"></span>
+        <img class="weatherImg">
+        <span class="temp"></span>
+    </div>
+    
+    <!-- info = clock + login -->
+    <div class="info">
+        <!--Clock : display time and date-->
+        <div class="clock">
+            <div class="time">00 : 00 : 00</div>
+            <div class="date">00. 00. 00</div>
+        </div>
+        <!--Login : save in localstorage-->
+        <div class="login">
+            <form class="login-form pretty-form">
+                <input type="text" class="login-input pretty-input" placeholder="Name" name="name" id='name' required />
+                <label for="name" class="form-label pretty-label">Name</label>
+            </form>
+        </div>
+    </div>
+
+    <!-- main = To do list + Note -->
+    <div class="main">
+        <!--To do list : save in localstorage, -->
+        <div class="toDoList">
+            <form class="toDoList-form pretty-form main-form">
+                <input type="text" class="toDoList-input pretty-input main-input" placeholder="To do everyday" name="To do everyday" id='To do everyday' required />
+                <label for="To do everyday" class="toDo-label pretty-label main-label">To do everyday</label>
+            </form>
+            <div class="main-ul">
+                <ul class="toDoList-ul">
+                </ul>
+            </div>
+        </div>
+        <!--note : save in localstorage-->
+        <div class="note">
+            <form class="note-form pretty-form main-form">
+                <input type="text" class="note-input pretty-input main-input" placeholder="Note" name="Note" id='Note' required />
+                <label for="Note" class="note-label pretty-label main-label">Note</label>
+            </form>
+            <div class="main-ul">
+                <ul class="note-ul">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input class="resetIcon" type="image" src="js/icon/whiteReset.png" alt="reset">
+    <!--Scripts-->
+    <script src="js/toDoList.js"></script>
+    <script src="js/name.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/note.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/resetLS.js"></script>
+</body>
+</html>

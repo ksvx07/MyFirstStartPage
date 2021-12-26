@@ -1,0 +1,201 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: -1px;
+    line-height: 1;
+    overflow: hidden;
+
+}
+
+/* Whether Start*/
+.weather {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.location {
+    text-shadow: 1px 1px 1px gray;
+    margin-left: 10px;
+}
+
+.weatherImg {
+    margin-left: auto;
+    object-fit: contain;
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(1px 1px 1px gray);
+}
+.temp {
+    margin-right: 0 auto;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px gray;
+}
+/* Whether End*/
+/* info = Clock + Login */
+.info {
+    text-align: center;
+}
+/* Clock Start*/
+.clock {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.time {
+    font-size: 6em;
+    margin-top: 1.5em;
+}
+
+.date {
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+/* Clock End*/
+
+
+/* Login Start */
+
+.login-form {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+  
+.hello {
+    margin-top: 1em;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1.5px 1.5px 1.5px gray;
+    animation-name: fadein, fadeout, moving;
+    animation-delay: 0s, 3s, 0s;
+    animation-duration: 3s, 6s, 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes moving {
+    from {
+        right: 50px;
+    }
+    to {
+        left: 50px;
+    }
+}
+
+
+/* Login End */
+
+/* main = To do list + Note */
+
+.main {
+    margin-top: 40px;
+}
+.main-ul {
+    position: absolute;
+    margin-top: 100px;
+}
+
+.main-list {
+    color: white;
+    margin-top: 10px;
+}
+
+.toDoList {
+    margin-left: 100px;
+    position: relative;
+
+}
+
+.toDoList-ul {
+    padding-left: 0;
+
+
+}
+
+.list-label {
+    display: inline-block;
+    width: 350px;
+}
+
+.note {
+    position: relative;
+    left: 73%;    
+}
+.note-ul {
+    padding-left: 0;
+    display: inline-block;
+    width: 430px;
+}
+.noteSpan {
+    width: 90%;
+    display: inline-block;
+}
+
+
+.small-icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Background Image Start*/
+html { 
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Background Image End*/
+
+/* Reset Start*/
+.resetIcon {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.resetOn {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+
+}
+/* Reset End*/

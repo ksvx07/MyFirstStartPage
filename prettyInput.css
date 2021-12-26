@@ -1,0 +1,58 @@
+
+.pretty-form {
+    padding: 15px 0 0;
+    margin-top: 20px;
+    width: 20%;
+    position: absolute;
+}
+
+.pretty-input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.pretty-input::placeholder {
+    color: transparent;
+}
+.pretty-input:placeholder-shown ~ .pretty-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.pretty-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.pretty-input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+.pretty-input:focus ~ .pretty-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+.pretty-input:required, .pretty-input:invalid {
+    box-shadow: none;
+}
